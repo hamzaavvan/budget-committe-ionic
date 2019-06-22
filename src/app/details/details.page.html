@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Budget Committee</h2>
+
+  <ion-grid>
+    <ion-row>
+        <ion-col>
+            <ion-chip color="primary">
+                <ion-label color="primary">Start: {{committee?.start?.toDate() | date: 'mediumDate'}}</ion-label>
+            </ion-chip>
+        </ion-col>
+        <ion-col>
+            <ion-chip color="primary">
+                <ion-label color="primary">End: {{committee?.last_at?.toDate() | date: 'mediumDate'}}</ion-label>
+            </ion-chip>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-chip color="success">
+              <ion-label color="success">{{days}} Days Committee</ion-label>
+          </ion-chip>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let u of committee?.users">{{u.name}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

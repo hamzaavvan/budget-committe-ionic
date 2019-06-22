@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Collections
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="fetch($event)">
+      <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-item *ngFor="let i of committees" (click)="get(i.uid)">
+    <ion-label>
+      <h2>Committee #{{i?.id}}</h2>
+      <img src="https://api.adorable.io/avatars/40/{{i?.uid}}" class="committe-sticker" alt="{{i?.uid}}">
+      <p>Start: {{i?.start | date: 'mediumDate'}}</p> 
+      <p>End: {{i?.last_at | date: 'mediumDate'}}</p>
+      <small class="ion-float-right"  color="primary">${{i.amount}}</small>
+    </ion-label>
+  </ion-item>
+  
+  <p padding *ngIf="!committees.length">No committees found!</p>
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col>Name</ion-col>
+      <ion-col>Collected</ion-col>
+    </ion-row>
+  </ion-grid> -->
+</ion-content>

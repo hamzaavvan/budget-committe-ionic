@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Add Committee
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+      <h2 padding>Start New Budget Committee</h2>
+      
+      <ion-item>
+        <ion-label position="stacked">Names: </ion-label>
+        <ion-input type="text" [(ngModel)]="names" placeholder="Enter names (comma seperated value)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Starting From: </ion-label>
+          <ion-input type="date" [(ngModel)]="start" placeholder="Choose date"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Till: </ion-label>
+          <ion-input type="date" [(ngModel)]="till" placeholder="Choose date"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Amount: </ion-label>
+          <ion-input type="number" [(ngModel)]="amount" placeholder="Enter amount of per day"></ion-input>
+      </ion-item>
+      
+      <ion-button expand="block" style="margin-top:15px" color="primary" (click)="createBC(names, till)">Create</ion-button>
+  </ion-grid>
+</ion-content>

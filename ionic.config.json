@@ -1,0 +1,7 @@
+{
+  "name": "mycollect-ionic-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
