@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "rulesDirectory": [
     "codelyzer"
   ],
@@ -127,4 +128,15 @@
     "use-pipe-transform-interface": true,
     "directive-class-suffix": true
   }
+=======
+  "rules": {
+    "no-duplicate-variable": true,
+    "no-unused-variable": [
+      true
+    ]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+>>>>>>> b03b26f... Initial commit
 }

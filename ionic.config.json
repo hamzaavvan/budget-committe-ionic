@@ -1,7 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "mycollect-ionic-app",
   "integrations": {
     "cordova": {}
   },
   "type": "angular"
+=======
+  "name": "event-manager",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+>>>>>>> b03b26f... Initial commit
 }

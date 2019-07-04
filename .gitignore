@@ -13,20 +13,35 @@ log.txt
 npm-debug.log*
 
 .idea/
+<<<<<<< HEAD
 .ionic/
+=======
+>>>>>>> b03b26f... Initial commit
 .sourcemaps/
 .sass-cache/
 .tmp/
 .versions/
 coverage/
+<<<<<<< HEAD
 www/
 node_modules/
 tmp/
 temp/
+=======
+dist/
+node_modules/
+tmp/
+temp/
+hooks/
+>>>>>>> b03b26f... Initial commit
 platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
+<<<<<<< HEAD
+=======
+www/
+>>>>>>> b03b26f... Initial commit
 $RECYCLE.BIN/
 
 .DS_Store
